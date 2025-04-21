@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Mutant Sniffer",
+  "version": "1.0",
+  "description": "Detects and downloads .m3u8 video stream as MP4",
+  "permissions": ["scripting", "activeTab", "downloads", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["ffmpeg.min.js", "ffmpeg-core.js", "ffmpeg-core.wasm"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

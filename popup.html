@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M3U8 Sniffer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 1rem;
+      width: 240px;
+      background-color: #1e1e1e;
+      color: #fff;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #90cdf4;
+    }
+    #urlDisplay {
+      font-size: 0.8rem;
+      background: #2d3748;
+      padding: 0.5rem;
+      border-radius: 4px;
+      word-wrap: break-word;
+      margin-bottom: 0.75rem;
+      max-height: 80px;
+      overflow-y: auto;
+    }
+    button {
+      background-color: #4fd1c5;
+      color: #1a202c;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    button:hover {
+      background-color: #38b2ac;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎥 M3U8 Sniffer</h1>
+  <div id="urlDisplay">No .m3u8 found yet.</div>
+  <button id="copyBtn">Copy URL</button>
+  <button id="downloadBtn">Download MP4</button>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>
